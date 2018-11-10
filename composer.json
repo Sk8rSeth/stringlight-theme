@@ -1,0 +1,56 @@
+{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.7.7",
+        "_comment" : "change type to 'library' if you want ACF to be installed in the vendor directory instead of the plugins directory",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?p=pro&a=download"
+        },
+        "require": {
+          "philippbaschke/acf-pro-installer": "^1.0",
+          "composer/installers": "^1.0"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "johnpbloch/wordpress": "*",
+    "vlucas/phpdotenv": "^2.4.0",
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/simple-image-sizes": "*",
+    "wpackagist-plugin/woocommerce": "^3.5.0",
+    "wpackagist-plugin/bea-beautiful-flexible": "*",
+    "advanced-custom-fields/advanced-custom-fields-pro": "*"
+  },
+  "require-dev": {
+    "wpackagist-plugin/post-duplicator": "*",
+    "wpackagist-plugin/wp-migrate-db": "*"
+  },
+  "extra": {
+    "wordpress-install-dir": "wp",
+    "wordpress-plugin-dir": "wp-content/plugin"
+  },
+  "scripts":{
+    "post-install-cmd": [
+      "cp .env-example .env",
+      "rm -rf wp/wp-content",
+      "cd wp-content/themes/theme-name/ && yarn install",
+      "cd wp-content/themes/theme-name/assets/src && yarn install"
+    ],
+    "post-update-cmd": [
+        "cd wp-content/themes/theme-name/ && yarn install",
+        "cd wp-content/themes/theme-name/assets/src && yarn install",
+        "rm -rf wp/wp-content"
+    ]
+  }
+}
