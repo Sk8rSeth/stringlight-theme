@@ -111,3 +111,21 @@ function sort_by_specified_key($array, $key, $desc = false){
 
 	return $array;
 }
+
+function random_gif() {
+	$base_dir = THEME_DIR . '/assets/pixelart';
+	$dir = get_template_directory_uri() . '/assets/pixelart/';
+	$files = array();
+
+	if (is_dir($base_dir)) {
+	    if ($dh = opendir($base_dir)) {
+	        while (($file = readdir($dh)) !== false) {
+				if(preg_match('/\.gif$/i', $file)) {
+					$files[] = $dir . $file;
+				}
+	        }
+	    }
+	}
+    $file = array_rand($files);
+	return $files[$file];
+}
