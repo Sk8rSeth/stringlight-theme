@@ -93,7 +93,7 @@ function include_svg($svg, $echo = true, $create_path = true){
 		$svgRatio = explode( ' ', $svgRatio );
 		unset( $svgRatio[0] ); unset( $svgRatio[1] );
 	}
-	$return = '<div class="svg" id="' . $id . '" aria-hidden="true"><canvas width="' . $svgRatio[2] . '" height="' . $svgRatio[3] . '"></canvas>' . $svg->item(0)->C14N() . '</div>';
+	$return = '<div class="svg" id="' . $id . '" aria-hidden="true">' . $svg->item(0)->C14N() . '</div>';
 	if( $echo ){
 		echo $return;
 	} else {

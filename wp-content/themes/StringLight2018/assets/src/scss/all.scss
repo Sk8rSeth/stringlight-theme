@@ -1,18 +1,19 @@
 @import 'vars';
 @import 'settings';
 @import 'foundation';
+@import "fontawesome";
 
 // use this line to include everything foundation has
-@include foundation-everything;
+// @include foundation-everything;
 
 // or use these to ONLY include specific modules
 // this cuts down dramatically on the page load time and the sass compile times
 
-// @include foundation-global-styles;
-// @include foundation-xy-grid-classes;
+@include foundation-global-styles;
+@include foundation-xy-grid-classes;
 // @include foundation-grid;
 // @include foundation-flex-grid;
-// @include foundation-flex-classes;
+@include foundation-flex-classes;
 // @include foundation-typography;
 // @include foundation-forms;
 // @include foundation-button;
@@ -46,18 +47,18 @@
 // @include foundation-title-bar;
 // @include foundation-tooltip;
 // @include foundation-top-bar;
-// @include foundation-visibility-classes;
+@include foundation-visibility-classes;
 // @include foundation-float-classes;
 
 // import free versions of FontAwesome
-@import "fontawesome.scss";
 @import "fa-solid.scss";
 @import "fa-regular.scss";
 @import "fa-brands.scss";
+@import "fa-light.scss";
 
 @import 'normalize';
-@import 'fonts';
 
 // include all other files after this
+@import "scaffolding/*";
 @import "partials/*";
 @import "modules/*";

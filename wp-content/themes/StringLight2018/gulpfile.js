@@ -10,7 +10,7 @@ var rename = require('gulp-rename');
 var notify = require('gulp-notify');
 var plumber = require('gulp-plumber');
 var cleanCSS = require('gulp-clean-css');
-var sourcemaps = require('gulp-sourcemaps');
+// var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
 var sassGlob = require('gulp-sass-glob');
 
@@ -20,7 +20,7 @@ var sassIncludePaths = [
     './assets/src/node_modules/bourbon/app/assets/stylesheets/',
     './assets/src/fontawesome-css/scss/',
     './assets/src/node_modules/hamburgers/_sass/hamburgers/',
-    './assets/src/node_modules/normalize.css/'
+    './assets/src/node_modules/normalize.css/',
 ];
 
 // Paths for task files
@@ -32,8 +32,8 @@ var paths = {
         ],
         concat: [
             'assets/src/node_modules/jquery/dist/jquery.min.js',
-            'assets/src/node_modules/slick-carousel/slick/slick.min.js',
             'assets/src/node_modules/foundation-sites/dist/js/foundation.js',
+            'assets/src/node_modules/slick-carousel/slick/slick.min.js',
             // add new plugins here
             'assets/src/js/**/*.js'
         ]
@@ -91,9 +91,9 @@ gulp.task('css', function() {
 gulp.task('js', function() {
     return gulp.src(paths.js.concat)
         .pipe(plumber({errorHandler: handleError}))
-        .pipe(sourcemaps.init())
+        // .pipe(sourcemaps.init())
         .pipe(concat('all.js'))
-        .pipe(sourcemaps.write())
+        // .pipe(sourcemaps.write())
         .pipe(gulp.dest('assets/js'))
         .pipe(notify('JS Saved'))
         .pipe(rename('all.min.js'))

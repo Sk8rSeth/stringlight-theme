@@ -1,7 +1,11 @@
 @import '../node_modules/foundation-sites/scss/util/util';
 
 // Base Colors
-// $color-blue: #023e5c;
+$color-light-grey: #C5C5C5;
+$color-grey: #88858C;
+$color-dark-grey: #4C5B61;
+$color-accent: #B0228C;
+$color-black: #291720;
 
 
 // Fonts
@@ -19,3 +23,5 @@ $fa-font-path: "../src/fontawesome-css/webfonts";
 
 // change row width
 $row-width: rem-calc(1200);
+
+$hamburger-layer-color: $color-black;
