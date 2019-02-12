@@ -7172,6 +7172,9 @@ h1, .h1 {
   font-size: 4.125rem;
   color: #291720;
   letter-spacing: 1px; }
+  @media screen and (max-width: 39.99875em) {
+    h1, .h1 {
+      font-size: 2.8125rem; } }
 
 /*!
  * Hamburgers
@@ -7406,9 +7409,11 @@ h1, .h1 {
   .hero-section .page-content {
     padding-top: 10rem; }
     .hero-section .page-content h2 {
-      text-align: center;
       margin-top: 0;
       margin-bottom: 0; }
+      @media screen and (min-width: 40em) {
+        .hero-section .page-content h2 {
+          text-align: center; } }
     .hero-section .page-content .subheading {
       margin-top: 2rem;
       font-size: 1.125rem;

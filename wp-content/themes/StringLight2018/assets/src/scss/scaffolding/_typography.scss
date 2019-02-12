@@ -8,6 +8,10 @@ h1, .h1 {
     font-size: rem-calc(66);
     color: $color-black;
     letter-spacing: 1px;
+
+    @include breakpoint(small only) {
+        font-size: rem-calc(45);
+    }
 }
 
 h2 .h2 {

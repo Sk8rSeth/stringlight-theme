@@ -1,11 +1,11 @@
 <div class="sticky-nav-container">
     <div class="navbar grid-x grid-container align-justify align-middle">
-        <div class="logo cell small-1">
+        <div class="logo cell small-4 medium-1">
             <a href="/">
                 <?php include_svg('biohazard-light'); ?>
             </a>
         </div>
-        <div class="menu-buttons cell small-6">
+        <div class="menu-buttons cell small-16 medium-6">
             <div class="grid-x grid-container align-justify align-middle">
                 <div class="contact-button">
                     <a href="#contact" class="btn">Lets Talk</a>
@@ -20,7 +20,7 @@
                         <?php wp_nav_menu(array(
                             'menu' => 'main-menu',
                             'container_class' => 'grid-x grid-container align-right',
-                            'menu_class' => 'menu vertical cell small-4 animated'
+                            'menu_class' => 'menu vertical cell small-20 medium-4 animated'
                         )); ?>
                     </div>
                 </div>
