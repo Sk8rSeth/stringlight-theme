@@ -1,6 +1,6 @@
 .hero-section {
     position: relative;
-    height: 200vh;
+    min-height: rem-calc(800);
 
     .abstract {
         position: absolute;
@@ -8,7 +8,7 @@
         top: -5rem;
         width: 35rem;
         height: rem-calc(800);
-        background-color: $color-accent;
+        background-color: $color-orange;
         z-index: -1;
     }
 
@@ -16,9 +16,6 @@
         padding-top: 10rem;
 
         h2 {
-            @include breakpoint(medium up) {
-                text-align: center;
-            }
             margin-top: 0;
             margin-bottom: 0;
         }
