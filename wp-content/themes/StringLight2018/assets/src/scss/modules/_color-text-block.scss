@@ -1,0 +1,21 @@
+.color-block {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        height: 15rem;
+        top: 5rem;
+        width: 50rem;
+        background-color: $color-orange;
+        z-index: -1;
+    }
+
+    &--right::before {
+        right: -15rem;
+    }
+
+    &--left::before {
+        left: -15rem;
+    }
+}
