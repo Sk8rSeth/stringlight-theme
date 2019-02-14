@@ -1,5 +1,14 @@
+body {
+    background-color: $color-background-light-grey;
+}
+
 a, button {
     outline: none;
     color: initial;
     text-decoration: none;
+}
+
+
+.module {
+    margin-bottom: 5rem;
 }

@@ -1,12 +1,11 @@
 body {
     font-family: $hand;
-    color: $color-dark-grey;
-    font-size: rem-calc(16);
+    color: $color-black;
+    font-size: rem-calc(18);
 }
 
 h1, .h1 {
     font-size: rem-calc(66);
-    color: $color-black;
     letter-spacing: 1px;
 
     @include breakpoint(small only) {
@@ -14,8 +13,24 @@ h1, .h1 {
     }
 }
 
-h2 .h2 {
+h2, .h2 {
+    font-size: rem-calc(52);
+    position: relative;
 
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 1rem;
+        width: 25%;
+        height: 1rem;
+        background-color: $color-purple;
+        opacity: .5;
+    }
+
+    @include breakpoint(small only) {
+        font-size: rem-calc(40);
+    }
 }
 
 h3, .h3 {

@@ -7118,12 +7118,13 @@ template {
   min-width: 10rem;
   padding: 1rem;
   text-transform: uppercase;
-  background-color: #C5C5C5;
+  background-color: #4d3857;
   font-size: 0.875rem;
   display: inline-block;
   font-weight: bold;
   position: relative;
-  overflow: hidden; }
+  overflow: hidden;
+  color: #C5C5C5; }
   .btn::before {
     transition: all .3s ease-in-out;
     content: '';
@@ -7132,7 +7133,7 @@ template {
     top: -1rem;
     bottom: 0;
     width: 70%;
-    background-color: #acacac;
+    background-color: #322438;
     -ms-transform: rotate(45deg) translateY(-1rem);
     transform: rotate(45deg) translateY(-1rem); }
   .btn::after {
@@ -7143,7 +7144,7 @@ template {
     right: 1rem; }
   .btn:hover:before {
     transition: all .3s ease-in-out;
-    background-color: #b8b8b8; }
+    background-color: #3f2e47; }
   .btn:hover::after {
     transition: all .3s ease-in-out;
     right: .75rem; }
@@ -7158,23 +7159,44 @@ template {
   src: url("../fonts/Sacramento/Sacramento-Regular.ttf") format("truetype");
   font-weight: 400; }
 
+body {
+  background-color: #e4e3e3; }
+
 a, button {
   outline: none;
   color: initial;
   text-decoration: none; }
 
+.module {
+  margin-bottom: 5rem; }
+
 body {
   font-family: "Advent Pro", sans-serif;
-  color: #4C5B61;
-  font-size: 1rem; }
+  color: #313339;
+  font-size: 1.125rem; }
 
 h1, .h1 {
   font-size: 4.125rem;
-  color: #291720;
   letter-spacing: 1px; }
   @media screen and (max-width: 39.99875em) {
     h1, .h1 {
       font-size: 2.8125rem; } }
+
+h2, .h2 {
+  font-size: 3.25rem;
+  position: relative; }
+  h2::before, .h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 1rem;
+    width: 25%;
+    height: 1rem;
+    background-color: #4d3857;
+    opacity: .5; }
+  @media screen and (max-width: 39.99875em) {
+    h2, .h2 {
+      font-size: 2.5rem; } }
 
 /*!
  * Hamburgers
@@ -7213,7 +7235,7 @@ h1, .h1 {
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
     width: 30px;
     height: 3px;
-    background-color: #291720;
+    background-color: #313339;
     border-radius: 1px;
     position: absolute;
     transition-property: transform;
@@ -7296,7 +7318,7 @@ h1, .h1 {
     .sticky-nav-container .navbar .logo svg path {
       transition: all .3s ease-in-out; }
     .sticky-nav-container .navbar .logo:hover svg path {
-      fill: #B0228C;
+      fill: #4d3857;
       transition: all .3s ease-in-out; }
     .sticky-nav-container .navbar .menu-buttons .menu.is-active {
       background: #C5C5C5; }
@@ -7372,6 +7394,21 @@ h1, .h1 {
     opacity: 1;
     left: 0; } }
 
+.color-block {
+  position: relative; }
+  .color-block::before {
+    content: '';
+    position: absolute;
+    height: 15rem;
+    top: 5rem;
+    width: 50rem;
+    background-color: #fe7a3e;
+    z-index: -1; }
+  .color-block--right::before {
+    right: -15rem; }
+  .color-block--left::before {
+    left: -15rem; }
+
 .page-container {
   position: absolute;
   top: 0;
@@ -7395,26 +7432,46 @@ h1, .h1 {
       font-family: "Sacramento", sans-serif;
       font-size: 2rem; }
 
+footer {
+  height: 5rem;
+  background-color: #4d3857;
+  color: #C5C5C5; }
+  footer .footer-container {
+    height: 100%; }
+
 .hero-section {
   position: relative;
-  height: 200vh; }
+  min-height: 50rem; }
   .hero-section .abstract {
     position: absolute;
     right: 0;
     top: -5rem;
     width: 35rem;
     height: 50rem;
-    background-color: #B0228C;
+    background-color: #fe7a3e;
     z-index: -1; }
   .hero-section .page-content {
     padding-top: 10rem; }
     .hero-section .page-content h2 {
       margin-top: 0;
       margin-bottom: 0; }
-      @media screen and (min-width: 40em) {
-        .hero-section .page-content h2 {
-          text-align: center; } }
     .hero-section .page-content .subheading {
       margin-top: 2rem;
       font-size: 1.125rem;
-      color: #291720; }
+      color: #313339; }
+
+.two-vertical-text {
+  position: relative; }
+  .two-vertical-text::before, .two-vertical-text::after {
+    content: '';
+    position: absolute;
+    background-color: #fe7a3e;
+    width: 12rem;
+    height: 18rem;
+    z-index: -1; }
+  .two-vertical-text::before {
+    left: 20rem;
+    top: 1rem; }
+  .two-vertical-text::after {
+    right: 20rem;
+    bottom: -5rem; }
