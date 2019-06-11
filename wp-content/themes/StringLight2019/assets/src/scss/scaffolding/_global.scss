@@ -1,0 +1,53 @@
+body {
+    background-color: $color-background-light-grey;
+}
+
+a, button {
+    outline: none;
+    color: initial;
+    text-decoration: none;
+}
+
+.stop-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: auto;
+  width: 100%;
+  height: 100%;
+}
+
+.module {
+    margin-bottom: 5rem;
+}
+
+.stringlight-gradient {
+    height: 1rem;
+    text-align: center;
+
+    &.small {
+        height: .5rem;
+    }
+
+    &.medium {
+        height: 1rem;
+    }
+
+    &.large {
+        height: 3rem;
+    }
+
+    span {
+        @include xy-cell(1/5);
+        width: 20%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        @each $current-color in $gradient-colors-list {
+            $i: index($gradient-colors-list, $current-color);
+            &.color-#{$i} {
+                background-color: $current-color;
+            }
+        }
+    }
+}

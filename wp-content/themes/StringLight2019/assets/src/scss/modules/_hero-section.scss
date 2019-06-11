@@ -1,0 +1,54 @@
+.hero-background {
+    @include breakpoint(small only) {
+        min-height: 50vh;
+    }
+    @include breakpoint(medium up) {
+        min-height: 85vh;
+    }
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+}
+
+.hero-logo-section {
+    &.home-hero {
+        .hero-logo {
+            text-align: center;
+            img {
+                height: 10rem;
+                margin-top: -6.5rem;
+            }
+        }
+    }
+}
+
+.hero-section {
+    position: relative;
+    min-height: rem-calc(800);
+
+    .abstract {
+        position: absolute;
+        right: 0;
+        top: -5rem;
+        width: 35rem;
+        height: rem-calc(800);
+        background-color: $color-orange;
+        z-index: -1;
+    }
+
+    .page-content {
+        padding-top: 10rem;
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        .subheading {
+            margin-top: 2rem;
+            font-size: rem-calc(18);
+            color: $color-black;
+
+        }
+    }
+}

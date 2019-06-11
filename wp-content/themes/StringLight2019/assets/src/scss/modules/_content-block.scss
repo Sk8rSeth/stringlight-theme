@@ -1,0 +1,16 @@
+.content-block {
+    text-align: center;
+
+    .content-section {
+        color: $color-orange;
+        font-weight: bold;
+
+        .p1 {
+            margin: 0;
+        }
+    }
+
+    .stringlight-gradient {
+        margin-top: 3rem;
+    }
+}

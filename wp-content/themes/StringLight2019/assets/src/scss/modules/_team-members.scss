@@ -1,0 +1,40 @@
+.team-members-block {
+    .members-container {
+        margin-bottom: 3rem;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -3px;
+            left: -3px;
+            right: -3px;
+            bottom: 0;
+            z-index: -1;
+            background: linear-gradient(to bottom, rgba(255,255,255,1)0%, rgba(255,255,255,0)40%);
+        }
+    }
+
+    .member {
+        text-align: center;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+
+        .member-image {
+            padding-top: rem-calc(200);
+
+            img {
+                width: 55%;
+            }
+        }
+
+        .name {
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        .roles {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+    }
+}

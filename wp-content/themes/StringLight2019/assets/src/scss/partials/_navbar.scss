@@ -1,0 +1,137 @@
+// this is an example partial file. delete this comment and use
+.sticky-nav-container {
+    position: fixed;
+    width: 100vw;
+    z-index: 10;
+
+    .navbar {
+        height: 5rem;
+        position: relative;
+        padding-top: 2rem;
+
+        .logo {
+            @include breakpoint(medium up) {
+                text-align: center;
+            }
+             img {
+                 width: 15rem;
+             }
+
+            // &:hover {
+            //     svg path {
+            //         fill: $color-purple;
+            //         transition: all .3s ease-in-out;
+            //     }
+            // }
+        }
+
+        .menu-buttons {
+            .menu {
+
+                &.is-active{
+                    background: $color-dark-grey;
+                }
+                .hamburger {
+                    position: relative;
+                    z-index: 999;
+                }
+                .overlay {
+                  position: fixed;
+                  background: $color-dark-grey;
+                  padding-top: 10rem;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 0%;
+                  opacity: 0;
+                  visibility: hidden;
+                  transition: opacity .35s, visibility .35s, height .35s;
+                  overflow: hidden;
+                  z-index: 998;
+
+                  &.is-active {
+                    opacity: .95;
+                    visibility: visible;
+                    height: 100%;
+
+                    li {
+                      animation: fadeInRight .5s ease forwards;
+                      animation-delay: .35s;
+
+                      &:nth-of-type(2) {
+                        animation-delay: .4s;
+                      }
+                      &:nth-of-type(3) {
+                        animation-delay: .45s;
+                      }
+                      &:nth-of-type(4) {
+                        animation-delay: .50s;
+                      }
+                      &:nth-of-type(5) {
+                        animation-delay: .55s;
+                      }
+                      &:nth-of-type(6) {
+                        animation-delay: .60s;
+                      }
+                      &:nth-of-type(7) {
+                        animation-delay: .65s;
+                      }
+
+                    }
+                  }
+                  ul {
+                    list-style: none;
+                    padding: 0;
+                    display: inline-block;
+                    position: relative;
+                    height: 100%;
+
+                    li {
+                      display: block;
+                      position: relative;
+                      opacity: 0;
+
+                      a {
+                        display: block;
+                        position: relative;
+                        text-decoration: none;
+                        overflow: hidden;
+                        color: $color-light-grey;
+                        font-size: 2rem;
+
+                        &:hover:after,
+                         &:focus:after,
+                         &:active:after {
+                           width: 100%;
+                         }
+
+                        &:after {
+                          content: '';
+                          position: absolute;
+                          bottom: 0;
+                          left: 0;
+                          width: 0%;
+                          transform: translateX(-50%);
+                          height: 3px;
+                          transition: .35s;
+                          background-color: $color-purple;
+                        }
+                      }
+                    }
+                  }
+                }
+
+                @keyframes fadeInRight {
+                  0% {
+                    opacity: 0;
+                    left: 20%;
+                  }
+                  100% {
+                    opacity: 1;
+                    left: 0;
+                  }
+                }
+            }
+        }
+    }
+}

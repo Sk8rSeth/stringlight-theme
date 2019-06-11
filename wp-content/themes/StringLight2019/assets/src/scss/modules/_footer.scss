@@ -1,0 +1,25 @@
+footer {
+    margin-top: 3rem;
+    color: $color-light-grey;
+
+    .footer-container {
+        height: 100%;
+
+        .contact-info {
+            font-size: 2rem;
+
+
+            a {
+                color: $color-light-grey;
+                font-weight: bold;
+            }
+        }
+
+        .legal {
+            margin-top: 2rem;
+            text-align: center;
+            color: $color-orange;
+            font-size: rem-calc(10);
+        }
+    }
+}

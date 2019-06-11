@@ -1,0 +1,61 @@
+body {
+    font-family: $quicksand;
+    color: #FFF;
+    font-size: rem-calc(18);
+}
+
+h1, .h1 {
+    font-size: rem-calc(66);
+    letter-spacing: 1px;
+
+    @include breakpoint(small only) {
+        font-size: rem-calc(45);
+    }
+}
+
+h2, .h2 {
+    font-size: rem-calc(52);
+    position: relative;
+
+    &.underline::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 1rem;
+        width: 25%;
+        height: 1rem;
+        background-color: $color-purple;
+        opacity: .5;
+    }
+
+    @include breakpoint(small only) {
+        font-size: rem-calc(40);
+    }
+}
+
+h3, .h3 {
+
+}
+
+h4, .h4 {
+
+}
+
+h5, .h5 {
+
+}
+
+.fancy {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: $wavehaus;
+    color: $color-purple;
+    background: -webkit-linear-gradient($color-purple, $color-orange);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.large {
+    font-size: 2rem;
+    font-weight: bold;
+}

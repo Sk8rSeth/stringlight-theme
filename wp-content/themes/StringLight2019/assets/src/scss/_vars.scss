@@ -7,15 +7,18 @@ $color-dark-grey: #4C5B61;
 $color-accent: #B0228C;
 $color-black: #313339;
 
-$color-background-light-grey: #e4e3e3;
+$color-background-light-grey: #25262b;
 
-$color-dark-purple: #01084f;
-$color-purple: #4d3857;
-
-$color-orange: #fe7a3e;
+// gradient colors
+$color-dark-purple: #392a43;
+$color-purple: #63214f;
+$color-orange: #e56c3d;
+$color-pink: #a73c5a;
 
 $color-blue: #022935;
 $color-dark-blue: #011820;
+
+$gradient-colors-list: #fff, $color-dark-purple, $color-purple, $color-pink, $color-orange;
 
 // Fonts
 // $font-roboto: "roboto", sans-serif;
@@ -35,4 +38,4 @@ $fa-font-path: "../src/fontawesome-css/webfonts";
 // change row width
 $row-width: rem-calc(1400);
 
-$hamburger-layer-color: $color-black;
+$hamburger-layer-color: #FFF;

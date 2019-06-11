@@ -1,0 +1,31 @@
+.page-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .font-container {
+        height: 100%;
+        text-align: center;
+        color: #eee;
+
+        .gradient-container {
+            padding: 2rem 12rem;
+            background: radial-gradient(ellipse at center, rgba(30,87,153,1) 0%, rgba(41,137,216,0.43) 50%, rgba(106,173,226,0) 70%);
+        }
+
+        .headline {
+            font-family: $hand;
+            font-size: 3rem;
+        }
+
+        .tagline {
+            font-family: $sacramento;
+            font-size: 2rem;
+        }
+    }
+}
