@@ -1,0 +1,78 @@
+.gform_wrapper {
+
+    .validation_error{
+        display: none;
+    }
+
+    .gform_body {
+        @include xy-cell(24);
+
+        .gform_fields {
+            list-style: none;
+            padding: 0;
+            @extend .grid-x;
+            @extend .align-center;
+
+            .captcha {
+                text-align: center;
+            }
+
+            .gfield {
+                position: relative;
+                margin-bottom: 1rem;
+            }
+
+            label {
+                position: absolute;
+                left: .5rem;
+                top: .5rem;
+                z-index:9;
+                font-weight: bold;
+                transition: all .3s ease-in-out;
+
+                &.active {
+                    top: -1.2rem;
+                    left: 0;
+                    font-weight: 400;
+                    font-size: 1rem;
+                    transition: all .3s ease-in-out;
+                }
+            }
+
+            input, textarea {
+                border: none;
+                border-radius: 5px;
+                outline: none;
+                width: 100%;
+                padding-left: .5rem;
+                overflow: hidden;
+                position: relative;
+                font-size: 2rem;
+                background: none;
+                border-bottom: 2px solid $color-purple;
+                color: $color-light-grey;
+                background: lighten($color-background-light-grey, 2%);
+            }
+
+            textarea {
+                resize: none;
+                height: 5rem;
+            }
+
+        }
+    }
+    .gform_footer {
+        @extend .btn;
+        input[type="submit"] {
+            text-align: left;
+            background: none;
+            font-family: $quicksand;
+            border: none;
+            outline: none;
+            color: $color-light-grey;
+            font-size: 1.25rem;
+            font-weight: bold;
+            width: 12rem;
+        }
+    }
+}
