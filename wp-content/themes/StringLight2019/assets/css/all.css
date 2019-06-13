@@ -7329,61 +7329,61 @@ h2, .h2 {
   font-size: 2rem;
   font-weight: bold; }
 
-.gform_wrapper .validation_error {
-  display: none; }
-
-.gform_wrapper .gform_body {
-  width: calc(100% - 1.25rem);
-  margin-right: 0.625rem;
-  margin-left: 0.625rem; }
-  .gform_wrapper .gform_body .gform_fields {
-    list-style: none;
-    padding: 0; }
-    .gform_wrapper .gform_body .gform_fields .captcha {
-      text-align: center; }
-    .gform_wrapper .gform_body .gform_fields .gfield {
-      position: relative;
-      margin-bottom: 1rem; }
-    .gform_wrapper .gform_body .gform_fields label {
-      position: absolute;
-      left: .5rem;
-      top: .5rem;
-      z-index: 9;
-      font-weight: bold;
-      transition: all .3s ease-in-out; }
-      .gform_wrapper .gform_body .gform_fields label.active {
-        top: -1.2rem;
-        left: 0;
-        font-weight: 400;
-        font-size: 1rem;
+.gform_wrapper {
+  text-align: center; }
+  .gform_wrapper .validation_error {
+    display: none; }
+  .gform_wrapper .gform_body {
+    width: calc(100% - 1.25rem);
+    margin-right: 0.625rem;
+    margin-left: 0.625rem; }
+    .gform_wrapper .gform_body .gform_fields {
+      list-style: none;
+      padding: 0; }
+      .gform_wrapper .gform_body .gform_fields .captcha {
+        text-align: center; }
+      .gform_wrapper .gform_body .gform_fields .gfield {
+        position: relative;
+        margin-bottom: 1rem; }
+      .gform_wrapper .gform_body .gform_fields label {
+        position: absolute;
+        left: .5rem;
+        top: .5rem;
+        z-index: 9;
+        font-weight: bold;
         transition: all .3s ease-in-out; }
-    .gform_wrapper .gform_body .gform_fields input, .gform_wrapper .gform_body .gform_fields textarea {
-      border: none;
-      border-radius: 5px;
-      outline: none;
-      width: 100%;
-      padding-left: .5rem;
-      overflow: hidden;
-      position: relative;
-      font-size: 2rem;
-      background: none;
-      border-bottom: 2px solid #63214f;
-      color: #C5C5C5;
-      background: #2a2b30; }
-    .gform_wrapper .gform_body .gform_fields textarea {
-      resize: none;
-      height: 5rem; }
-
-.gform_wrapper .gform_footer input[type="submit"] {
-  text-align: left;
-  background: none;
-  font-family: "Quicksand", sans-serif;
-  border: none;
-  outline: none;
-  color: #C5C5C5;
-  font-size: 1.25rem;
-  font-weight: bold;
-  width: 12rem; }
+        .gform_wrapper .gform_body .gform_fields label.active {
+          top: -1.2rem;
+          left: 0;
+          font-weight: 400;
+          font-size: 1rem;
+          transition: all .3s ease-in-out; }
+      .gform_wrapper .gform_body .gform_fields input, .gform_wrapper .gform_body .gform_fields textarea {
+        border: none;
+        border-radius: 5px;
+        outline: none;
+        width: 100%;
+        padding-left: .5rem;
+        overflow: hidden;
+        position: relative;
+        font-size: 2rem;
+        background: none;
+        border-bottom: 2px solid #63214f;
+        color: #C5C5C5;
+        background: #2a2b30; }
+      .gform_wrapper .gform_body .gform_fields textarea {
+        resize: none;
+        height: 5rem; }
+  .gform_wrapper .gform_footer input[type="submit"] {
+    text-align: left;
+    background: none;
+    font-family: "Quicksand", sans-serif;
+    border: none;
+    outline: none;
+    color: #C5C5C5;
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: 12rem; }
 
 /*!
  * Hamburgers

@@ -17,7 +17,7 @@
                         <?php wp_nav_menu(array(
                             'menu' => 'main-menu',
                             'container_class' => 'grid-x grid-container align-right',
-                            'menu_class' => 'menu vertical cell small-20 medium-4 animated'
+                            'menu_class' => 'menu vertical cell small-20 medium-6 animated'
                         )); ?>
                         <!-- <div class="contact-button grid-x grid-container align-right">
                             <a href="#contact" class="btn cell small-4">Lets Talk</a>
