@@ -18,7 +18,7 @@
             <div class="cell small-18 small-offset-3 legal">
                 &copy; <?php echo date('Y'); ?> Stringlight Creative LLC. All rights reserved.
             </div>
-            <div class="cell small-18 small-offset-3">
+            <div class="cell small-24 medium-18 medium-offset-3">
                 <?= stringlightGradient('large'); ?>
             </div>
         </div>

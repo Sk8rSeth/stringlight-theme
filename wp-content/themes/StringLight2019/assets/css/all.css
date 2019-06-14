@@ -7324,6 +7324,9 @@ h2, .h2 {
   background: -webkit-linear-gradient(#63214f, #e56c3d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
+  @media screen and (max-width: 48.12375em) {
+    .fancy {
+      font-size: 2rem; } }
 
 .large {
   font-size: 2rem;
@@ -7631,6 +7634,9 @@ footer {
     height: 100%; }
     footer .footer-container .contact-info {
       font-size: 2rem; }
+      @media screen and (max-width: 48.12375em) {
+        footer .footer-container .contact-info {
+          font-size: 1.2rem; } }
       footer .footer-container .contact-info a {
         color: #C5C5C5;
         font-weight: bold; }
@@ -7639,6 +7645,8 @@ footer {
       text-align: center;
       color: #e56c3d;
       font-size: 0.625rem; }
+    footer .footer-container .stringlight-icon {
+      text-align: center; }
 
 .contact-form {
   min-height: 30rem;
@@ -7653,20 +7661,35 @@ footer {
 .full-width-slider {
   height: 30rem;
   position: relative; }
+  @media screen and (max-width: 48.12375em) {
+    .full-width-slider {
+      height: 20rem; } }
   .full-width-slider .slick-track {
     height: 30rem; }
+    @media screen and (max-width: 48.12375em) {
+      .full-width-slider .slick-track {
+        height: 20rem; } }
   .full-width-slider .slider-container {
     height: 30rem; }
+    @media screen and (max-width: 48.12375em) {
+      .full-width-slider .slider-container {
+        height: 20rem; } }
     .full-width-slider .slider-container .reference-slide {
       height: 25rem;
       position: relative;
       margin: 0 .5rem;
       padding-top: 3rem;
       transition: all .3s ease-in-out; }
+      @media screen and (max-width: 48.12375em) {
+        .full-width-slider .slider-container .reference-slide {
+          height: 15rem; } }
       .full-width-slider .slider-container .reference-slide.slick-center {
         transition: all .3s ease-in-out;
         height: 30rem;
         padding-top: 0; }
+        @media screen and (max-width: 48.12375em) {
+          .full-width-slider .slider-container .reference-slide.slick-center {
+            height: 20rem; } }
       .full-width-slider .slider-container .reference-slide .image-slide {
         height: 100%;
         background-size: cover;
@@ -7722,6 +7745,10 @@ footer {
   .hero-logo-section.home-hero .hero-logo img {
     height: 10rem;
     margin-top: -6.5rem; }
+    @media screen and (max-width: 48.12375em) {
+      .hero-logo-section.home-hero .hero-logo img {
+        height: 6rem;
+        margin-top: -3rem; } }
 
 .hero-section {
   position: relative;
@@ -7747,6 +7774,9 @@ footer {
 .team-members-block .members-container {
   margin-bottom: 3rem;
   position: relative; }
+  @media screen and (max-width: 48.12375em) {
+    .team-members-block .members-container {
+      background-color: #25262b; } }
   .team-members-block .members-container::before {
     content: '';
     position: absolute;

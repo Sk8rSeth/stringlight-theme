@@ -2,6 +2,9 @@
     .members-container {
         margin-bottom: 3rem;
         position: relative;
+        @include breakpoint(small only) {
+            background-color: $color-background-light-grey;
+        }
         &::before {
             content: '';
             position: absolute;

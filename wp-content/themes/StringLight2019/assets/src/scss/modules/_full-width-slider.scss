@@ -1,13 +1,22 @@
 .full-width-slider {
     height: 30rem;
     position: relative;
-    
+    @include breakpoint(small only) {
+        height: 20rem;
+    }
+
      .slick-track {
          height: 30rem;
+         @include breakpoint(small only) {
+             height: 20rem;
+         }
      }
 
     .slider-container {
         height: 30rem;
+        @include breakpoint(small only) {
+            height: 20rem;
+        }
 
         .reference-slide {
             height: 25rem;
@@ -15,10 +24,17 @@
             margin: 0 .5rem;
             padding-top: 3rem;
             transition: all .3s ease-in-out;
+
+            @include breakpoint(small only) {
+                height: 15rem;
+            }
             &.slick-center {
                 transition: all .3s ease-in-out;
                 height: 30rem;
                 padding-top: 0;
+                @include breakpoint(small only) {
+                    height: 20rem;
+                }
             }
 
             .image-slide {

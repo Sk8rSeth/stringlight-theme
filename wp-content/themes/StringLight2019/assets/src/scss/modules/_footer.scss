@@ -7,6 +7,9 @@ footer {
 
         .contact-info {
             font-size: 2rem;
+            @include breakpoint(small only) {
+                font-size: 1.2rem;
+            }
 
 
             a {
@@ -20,6 +23,10 @@ footer {
             text-align: center;
             color: $color-orange;
             font-size: rem-calc(10);
+        }
+
+        .stringlight-icon {
+            text-align: center;
         }
     }
 }

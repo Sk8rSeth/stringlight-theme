@@ -17,6 +17,10 @@
             img {
                 height: 10rem;
                 margin-top: -6.5rem;
+                @include breakpoint(small only) {
+                    height: 6rem;
+                    margin-top: -3rem;
+                }
             }
         }
     }

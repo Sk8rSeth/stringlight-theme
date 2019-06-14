@@ -1,9 +1,9 @@
 <div class="sticky-nav-container">
     <div class="navbar grid-x grid-container align-justify align-middle">
         <div class="logo cell small-4 medium-10 medium-offset-8">
-            <a href="/">
-                <!-- <img src="<?= get_field('large_logo', 'options'); ?>" alt="Stringlight Creative Logo"> -->
-            </a>
+            <!-- <a href="/">
+                <img src="<?= get_field('large_logo', 'options'); ?>" alt="Stringlight Creative Logo">
+            </a> -->
         </div>
         <div class="menu-buttons cell small-16 medium-6">
             <div class="grid-x grid-container align-right align-middle">

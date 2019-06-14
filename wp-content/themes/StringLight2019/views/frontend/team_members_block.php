@@ -1,12 +1,12 @@
 <div id="who-we-are" class="team-members-block grid-x grid-container align-center module">
-    <div class="members-container cell small-24 medium-20">
+    <div class="members-container cell small-22 medium-20">
         <div class="grid-x collapse">
             <?php foreach ($module['team_member'] as $member): ?>
                 <?php
                 $hex = $member['member_background_color'];
                 list($r, $g, $b) = sscanf($hex, "#%02x%02x%02x");
                 ?>
-                <div class="member small-22 medium-8" style="background: linear-gradient(to bottom, rgba(37,38,43, .5) 1%, rgba(37,38,43, 0) 60%),url('<?= $member['member_background_image']; ?>');">
+                <div class="member small-24 medium-8" style="background: linear-gradient(to bottom, rgba(37,38,43, .5) 1%, rgba(37,38,43, 0) 60%),url('<?= $member['member_background_image']; ?>');">
                     <div class="grid-x align-center"style="background: linear-gradient(to bottom, rgba(<?= $r.','.$g.','.$b; ?>, .5) 1%, rgba(<?= $r.','.$g.','.$b; ?>, 0) 60%);">
                         <div class="member-image">
                             <img src="<?= $member['member_image']; ?>" alt="">

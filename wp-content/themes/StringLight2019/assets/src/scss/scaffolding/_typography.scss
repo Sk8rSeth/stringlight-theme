@@ -53,6 +53,10 @@ h5, .h5 {
     background: -webkit-linear-gradient($color-purple, $color-orange);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    @include breakpoint(small only) {
+        font-size: 2rem;
+    }
 }
 
 .large {
